@@ -1,12 +1,13 @@
 package com.acme.center.platform.sales.application.commands;
+import com.acme.center.pc27800u20241d483.logistic.domain.model.valueobjects.DeliveryCode;
 
 public record CreateDeliveryOrdersCommand(
-        String deliveryCode,
-        String warehoseId,
-        String deliveryWindow,
+        String DeliveryCode,
+        String WarehoseId,
+        String DeliveryWindow,
         String PackageLoad,
         int priorityLevel ,
-        String status ,
-        String deliveryNotes
+        boolean DeliveryStatus ,
+        String DeliveryNotes
 ) {
 }
